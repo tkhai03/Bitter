@@ -1,7 +1,9 @@
 import React from 'react'
 import './Sidebar.css'
 import SentimentDissatisfiedIcon from '@material-ui/icons/SentimentDissatisfied';
+import NotificationsNoneIcon from '@material-ui/icons/NotificationsNone';
 import SidebarOption from './SidebarOption'
+import {Button} from '@material-ui/core'
 
 function Sidebar() {
     return(

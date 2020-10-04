@@ -1,0 +1,20 @@
+.sidebarOption{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.sidebarOption:hover {
+    background-color: #6A6AC4;
+    border-radius: 30px;
+    color: #B1B1EE;
+    transition: color 150ms ease-out;
+}
+
+.sidebarOption > h2 {
+    font-weight: 800;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
