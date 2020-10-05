@@ -1,7 +1,7 @@
 import React from 'react'
 import './Feed.css'
 import GrieveBox from './GrieveBox'
-import Widgets from './Widgets'
+
 
 function Feed(){
     return(

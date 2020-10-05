@@ -1,9 +1,11 @@
 import React from 'react'
 import './Sidebar.css'
 import SentimentDissatisfiedIcon from '@material-ui/icons/SentimentDissatisfied';
-import NotificationsNoneIcon from '@material-ui/icons/NotificationsNone';
+// import NotificationsOutlinedIcon from '@material-ui/icons/NotificationsOutlined';
 import SidebarOption from './SidebarOption'
 import {Button} from '@material-ui/core'
+
+
 
 function Sidebar() {
     return(
@@ -16,8 +18,8 @@ function Sidebar() {
         <SidebarOption text='Lists'/>
         <SidebarOption text='Profile'/>
         <SidebarOption text='More'/>
-        <Button variant="outlined" className="sidebar_grieve" fullWidth>Grieve</Button>
 
+        <Button variant="outlined" className="sidebar_grieve" fullWidth>Grieve</Button>
         </div>
     )
 }

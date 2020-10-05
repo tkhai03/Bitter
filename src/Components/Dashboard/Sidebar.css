@@ -1,16 +1,16 @@
-.sidebar_bitterIcon {
-    color: #9797DC;
-    font-size: 50px !important;
-    margin-left: 20px;
-    margin-right:20px;
-}
-
 .Sidebar {
     border-right: 1px solid darkslategray;
     flex: 0.3;
-    margin-top: 20px;
+    margin-top: 10px;
     padding-left: 20px;
     padding-right: 20px;
+}
+.sidebar_bitterIcon {
+    color: #9797DC;
+    font-size: 60px !important;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right:20px;
 }
 
 .sidebar_grieve{
@@ -20,6 +20,6 @@
     font-weight: 900 !important;
     text-transform: inherit !important;
     border-radius: 30px !important;
-    height: 50px;
+    height: 50px !important;
     margin-top: 20px !important;
 }

@@ -9,9 +9,8 @@ function GrieveBox(){
             <form>
                 <div className='grieveBox_input'>
                 <Avatar>OP</Avatar>
-                <input placeholder='Whats on your mind'></input>
+                <input placeholder="What's happening?"></input>
                 </div>
-                <input className='grieveBox_inputImg' placeholder='Enter Image URL' type = 'text'></input>
                 <Button className="grieveBox_grieveButton">Grieve</Button>
             </form>
 
