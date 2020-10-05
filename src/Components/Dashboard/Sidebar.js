@@ -8,7 +8,7 @@ import {Button} from '@material-ui/core'
 function Sidebar() {
     return(
         <div className='Sidebar'>
-        <SentimentDissatisfiedIcon />
+        <SentimentDissatisfiedIcon className='sidebar_bitterIcon'/>
         <SidebarOption text='Home'/>
         <SidebarOption text='Notifications' />
         <SidebarOption text='Messages'/>
@@ -16,6 +16,7 @@ function Sidebar() {
         <SidebarOption text='Lists'/>
         <SidebarOption text='Profile'/>
         <SidebarOption text='More'/>
+        <Button variant="outlined" className="sidebar_grieve" fullWidth>Grieve</Button>
 
         </div>
     )

@@ -1,12 +1,16 @@
 import React from 'react'
 import Sidebar from './Sidebar'
+import Feed from './Feed'
+import Widgets from './Widgets'
+import './Dashboard.css';
 
 
 function Dashboard(){
     return(
-        <div>
-            Dashboard.js
-            <Sidebar/>
+        <div className='Dashboard'>
+            <Sidebar />
+            <Feed />
+            <Widgets />
         </div>
     )
 }

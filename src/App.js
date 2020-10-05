@@ -9,8 +9,8 @@ import {withRouter} from 'react-router-dom'
 
 function App(props){
   return(
-    <div>
-      App.js
+    <div className='App'>
+
       {props.location.pathname !== '/' ? <Landing/> : null}
       {routes}
     </div>

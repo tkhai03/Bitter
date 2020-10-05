@@ -1,0 +1,39 @@
+.grieveBox{
+    padding-bottom: 10px;
+    padding-right: 10px;
+    border-bottom: 5px solid darkslategray;
+}
+
+.grieveBox > form {
+    display: flex;
+    flex-direction: column;
+}
+
+.grieveBox_input{
+    padding: 20px;
+    display: flex;
+}
+
+.grieveBox_input > input {
+    flex: 1;
+    margin-left: 20px;
+    font-size: 20px;
+    border: none;
+}
+
+.grieveBox_inputImg{
+    border: none;
+    padding: 20px;
+}
+
+.grieveBox_grieveButton{
+    background-color: #5353B2;
+    border: none !important;
+    color:#B1B1EE !important;
+    font-weight: 900 !important;
+    text-transform: inherit !important;
+    border-radius: 30px !important;
+    height: 50px;
+    margin-top: 20px !important;
+    margin-left: auto !important;
+}

@@ -1,0 +1,28 @@
+.Feed {
+    flex: 0.4;
+    border-right: 1px solid darkslategray;
+    min-width: fit-content;
+    overflow-y: scroll;
+}
+
+.feed_header {
+    position: sticky;
+    top: 0;
+    background-color:rgb(21,32,43);
+    z-index: 1;
+    border: 1px solid darkslategray;
+    padding: 15px 20px;
+}
+
+.feed_header > h2 {
+    font-size: 20px;
+    font-weight: 800;
+}
+/*hide scroll bar for chrome, safari, opera*/
+.Feed::-webkit-scrollbar{
+    display: none;
+}
+.Feed{
+    -ms-overflow-style: none;/*IE and Edge*/
+    scrollbar-width: none;/*Firefox*/
+}
