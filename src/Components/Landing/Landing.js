@@ -17,7 +17,7 @@ function Landing() {
             </div>
             <div className='auth_container'>
                 <div className='loginText'>
-                    {/* <h1 className='loginMsg'>See what's happening in the world right now</h1> */}
+                    <h1 className='loginMsg'>See what's happening in the world right now</h1>
                 </div>
                 <div className='button-container'>
                     <Link to='/register'>
