@@ -1,13 +1,14 @@
 import React from 'react'
 import './Landing.css'
 import bitterLogo from './bitter-chat-background.jpg'
+import {Link} from 'react-router-dom'
 
 
-function Landing(){
-    return(
+function Landing() {
+    return (
         <div className="Landing">
             <div className='grievePoster'>
-                <img src={bitterLogo}/>
+                <img className='bitterLogo'src={bitterLogo} alt='logo' />
                 <div className='posterText'>
                     <h1 className='posterMsg'>Follow your interests.</h1>
                     <h1 className='posterMsg'>Hear what people are talking about.</h1>
@@ -19,8 +20,12 @@ function Landing(){
                     {/* <h1 className='loginMsg'>See what's happening in the world right now</h1> */}
                 </div>
                 <div className='button-container'>
+                    <Link to='/register'>
                     <button>Sign up</button>
-                    <button>Log in</button>
+                    </Link>
+                    <Link to='/auth'>
+                    <button>Log in</button>                  
+                    </Link>
                 </div>
             </div>
 

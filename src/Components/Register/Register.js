@@ -1,10 +1,11 @@
 import React, {Component} from 'react'
 import axios from 'axios'
+import './Register.css'
 // import {loginUser} from '../../ducks/reducer'
 
 class Register extends Component{
-    constructor(){
-        super()
+    constructor(props){
+        super(props)
         this.state = {
             email:'',
             username: '',
@@ -33,11 +34,11 @@ class Register extends Component{
 
     render(){
         return(
-            <div>
+            <div className="Register">
                 <input placeholder='Email' name='email' text='text' value={this.state.email} onChange={(e) => {this.handleInput(e)}}/>
                 <input placeholder='Username' name='username' text='text' value={this.state.username} onChange={(e) => {this.handleInput(e)}}/>
-                <input placeholder='Password' name='password' text='text' value={this.state.password}/>
-                <button onClick={ () => {this.handleRegister()}} to='/register'>Register</button>
+                <input placeholder='Password' name='password' text='text' value={this.state.password} onChange={(e) => {this.handleInput(e)}}/>
+                <button onClick={ () => {this.handleRegister()}} to='/dashboard'>Register</button>
 
             </div>
         )

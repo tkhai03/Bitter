@@ -9,7 +9,7 @@ function App(props){
   return(
     <div className='App'>
 
-      {props.location.pathname !== '/' ? <Landing/> : null}
+      {props.location.pathname === '/' ? <Landing/> : null}
       {routes}
     </div>
   )

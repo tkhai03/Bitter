@@ -1,10 +1,12 @@
+import axios from 'axios'
 import React, {Component} from 'react'
+import './Auth.css'
 
 class Auth extends Component{
-    constructor(){
-        super()
+    constructor(props){
+        super(props)
         this.state = {
-            username: '',
+            email: '',
             password: '',
         }
     }
@@ -16,16 +18,24 @@ class Auth extends Component{
     }
 
     handleLogin = (e) => {
-        const {username, password} = this.state
-    }
+        const {email, password} = this.state
 
+        axios
+        .post('/auth/login', {email, password})
+        .then((res) => {
+            this.props.loginUser(res.data)
+            this.props.history.push('/dashboard')
+            })
+            .catch((err) => {
+                alert(err.message)
+        })
+    }
     render(){
         return(
             <div>
-                <input placeholder='Username' name="username" text="text" value={this.state.username} onChange={(e) => {this.handleInput(e)}}/>
+                <input placeholder='Email' name="email" text="text" value={this.state.email} onChange={(e) => {this.handleInput(e)}}/>
                 <input placeholder='Password' name="password" text="text" value={this.state.password} onChange={(e) => {this.handleInput(e)}}/>
                 <button onClick={ () => {this.handleLogin()}}>Log in</button>
-
             </div>
         )
     }
