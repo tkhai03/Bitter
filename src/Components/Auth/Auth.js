@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, {Component} from 'react'
 import './Auth.css'
+import SentimentDissatisfiedIcon from '@material-ui/icons/SentimentDissatisfied';
 
 class Auth extends Component{
     constructor(props){
@@ -32,10 +33,16 @@ class Auth extends Component{
     }
     render(){
         return(
-            <div>
-                <input placeholder='Email' name="email" text="text" value={this.state.email} onChange={(e) => {this.handleInput(e)}}/>
-                <input placeholder='Password' name="password" text="text" value={this.state.password} onChange={(e) => {this.handleInput(e)}}/>
-                <button onClick={ () => {this.handleLogin()}}>Log in</button>
+            <div className='Auth'>
+                <div className='loginContainer'>
+                <SentimentDissatisfiedIcon className='authBitterIcon'/>
+                    <h1>Log in to Bitter</h1>
+                    <div className='authInputs'>
+                        <input className='authEmail' placeholder='Email' name="email" text="text" value={this.state.email} onChange={(e) => {this.handleInput(e)}}/>
+                        <input className='authPassword' placeholder='Password' name="password" text="text" value={this.state.password} onChange={(e) => {this.handleInput(e)}}/>
+                    </div>
+                    <button className='authLoginButton'onClick={ () => {this.handleLogin()}}>Log in</button>
+                </div>
             </div>
         )
     }

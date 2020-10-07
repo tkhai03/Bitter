@@ -2,18 +2,11 @@
     width: 100%;
     height: 100vh;
     background-color: #38365C;
-}
-
-.grievePoster{
-    background-color: #B1B1EE;
-    width:50%;
-    height: 100vh;
-    /* border-image-repeat: initial;
-    background-repeat: no-repeat; */
+    display: flex;
 }
 
 .bitterLogo{
-    width:100%;
+    width:50%;
     height:100vh;
     /* border-image-repeat: initial;
     background-repeat: no-repeat; */
@@ -35,35 +28,57 @@
     color: white;
 }
 
+.auth_container{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    /* height: 150px;
+    width: 100px; */
+
+}
 .loginText{
     display: flex;
     position: absolute;
     left: 65%;
-    top: 25%;
+    top: 35%;
 }
 
-.auth_container{
-    height: 100px;
-    width: 100px;
-    /* display: flex;
-    flex-direction: column;
-    position: absolute;
-    left: 70%;
-    top: 35%; */
-}
 
 .loginMsg{
-    height: 12px;
+    height: 20px;
     width: 330px;
     font-size: 25px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 700;
-    color: white
+    font-weight: 650;
+    color: white;
 }
 
-/* .button-container{
-    height: 40vh;
+.button-container{
     display: flex;
     flex-direction: column;
-} */
+    position: absolute;
+    top: 50%;
+    right: 15%;
+}
 
+button{
+    margin-bottom: 10px;
+    background-color: #312435;
+    border: none;
+    color: white;
+    font-weight: 600;
+    text-transform: inherit;
+    border-radius: 18px;
+    height: 30px;
+    width: 310px;
+}
+.button1{
+    background-color: #6A6AC4;
+}
+
+.button2{
+    border: 2px #6A6AC4;
+    border-style: solid;
+    color: #6A6AC4;
+}

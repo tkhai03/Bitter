@@ -7,13 +7,11 @@ import {Link} from 'react-router-dom'
 function Landing() {
     return (
         <div className="Landing">
-            <div className='grievePoster'>
-                <img className='bitterLogo'src={bitterLogo} alt='logo' />
-                <div className='posterText'>
-                    <h1 className='posterMsg'>Follow your interests.</h1>
-                    <h1 className='posterMsg'>Hear what people are talking about.</h1>
-                    <h1 className='posterMsg'>Join the conversation</h1>
-                </div>
+            <img className='bitterLogo'src={bitterLogo} alt='logo' />
+            <div className='posterText'>
+                <h1 className='posterMsg'>Follow your interests.</h1>
+                <h1 className='posterMsg'>Hear what people are talking about.</h1>
+                <h1 className='posterMsg'>Join the conversation</h1>
             </div>
             <div className='auth_container'>
                 <div className='loginText'>
@@ -21,10 +19,10 @@ function Landing() {
                 </div>
                 <div className='button-container'>
                     <Link to='/register'>
-                    <button>Sign up</button>
+                    <button className='button1'>Sign up</button>
                     </Link>
                     <Link to='/auth'>
-                    <button>Log in</button>                  
+                    <button className='button2'>Log in</button>                  
                     </Link>
                 </div>
             </div>
