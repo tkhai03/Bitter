@@ -2,6 +2,8 @@ import axios from 'axios'
 import React, {Component} from 'react'
 import './Auth.css'
 import SentimentDissatisfiedIcon from '@material-ui/icons/SentimentDissatisfied';
+import {loginUser} from '../../ducks/reducer'
+import {connect} from 'react-redux'
 
 class Auth extends Component{
     constructor(props){
@@ -48,4 +50,4 @@ class Auth extends Component{
     }
 }
 
-export default Auth
+export default connect(null, {loginUser})(Auth)

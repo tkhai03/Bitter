@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import axios from 'axios'
 import './Register.css'
-import {Link} from 'react-router-dom'
+
 import SentimentDissatisfiedIcon from '@material-ui/icons/SentimentDissatisfied';
 
 // import {loginUser} from '../../ducks/reducer'
@@ -27,7 +27,7 @@ class Register extends Component{
         axios
         .post('/auth/register', {email, username, password})
         .then((res) => {
-            this.props.loginUser(res.data)
+            // this.props.loginUser(res.data)
             this.props.history.push('/dashboard')
         })
         .catch((err) => {
@@ -47,9 +47,9 @@ class Register extends Component{
 
                     <input className='inputBox' placeholder='Password' name='password' text='text' value={this.state.password} onChange={(e) => {this.handleInput(e)}}/>
                 </div>
-                <Link to='/dashboard'>
-                <button className='registerButton' onClick={ () => {this.handleRegister()}} to='/dashboard'>Register</button>                
-                </Link>
+
+                <button className='registerButton' onClick={ () => {this.handleRegister()}} >Register</button>                
+
 
             </div>
         )
