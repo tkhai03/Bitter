@@ -3,6 +3,7 @@ const express = require('express')
 const session = require('express-session')
 const massive = require('massive')
 const authCtrl = require('./authController')
+const postCtrl = require('./Controller')
 
 const app = express()
 app.use(express.json())
@@ -31,4 +32,9 @@ app.post('/auth/login', authCtrl.login)
 app.delete('/auth/logout', authCtrl.logout)
 app.get('/auth/user', authCtrl.getUser)
 
-//post endpoints TBD
+//post endpoints
+app.get('/api/posts', postCtrl.getPosts)
+app.post('/api/posts', postCtrl.addPost)
+app.put('/api/posts/:post_id', postCtrl.editPost)
+app.delete('/api/posts/:post_id', postCtrl.deletePost)
+app.get('/api/posts', postCtrl.followingPosts)
