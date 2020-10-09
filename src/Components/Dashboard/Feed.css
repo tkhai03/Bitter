@@ -1,6 +1,6 @@
 .Feed {
     flex: 0.4;
-    border-right: 1px solid darkslategray;
+    border-right: 1px solid #221B2B;
     min-width: fit-content;
     overflow-y: scroll;
 }
@@ -8,9 +8,9 @@
 .feed_header {
     position: sticky;
     top: 0;
-    background-color:rgb(21,32,43);
+    background-color: #0F0D1A;
     z-index: 1;
-    border: 1px solid darkslategray;
+    border: 1px solid #221B2B;
     padding: 15px 20px;
 }
 

@@ -1,6 +1,11 @@
+.bigDashboard{
+  width: 100vw;
+  height: 100vh;
+  background-color: #0F0D1A;
+}
 .Dashboard {
     display: flex;
-    background-color: rgb(21,32,43);
+    background-color: #0F0D1A;
     height: 100vh;
     max-width: 1300px;
     margin-left: auto;

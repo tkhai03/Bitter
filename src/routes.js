@@ -12,5 +12,6 @@ export default(
         <Route path='/dashboard' component={Dashboard}/>
         <Route path='/auth' component={Auth}/>
         <Route path='/register' component={Register}/>
+        {/* <Route render={() => <Redirect to="/" />} /> */}
     </Switch>
 )
