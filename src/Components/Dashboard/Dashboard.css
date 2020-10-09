@@ -14,7 +14,8 @@
   }
   .dashLogout{
     height: 30px;
-    position: absolute;
+    
+    /* position: relative; */
     left: 180px;
     bottom: 50px;
   }

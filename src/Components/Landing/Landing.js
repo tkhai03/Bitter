@@ -1,10 +1,13 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './Landing.css'
 import bitterLogo from './bitter-chat-background.jpg'
 import {Link} from 'react-router-dom'
+import Register from '../Register/Register'
 
 
 function Landing() {
+    const [register, setRegister] = useState(false)
+
     return (
         <div className="Landing">
             <img className='bitterLogo'src={bitterLogo} alt='logo' />
@@ -18,14 +21,17 @@ function Landing() {
                     <h1 className='loginMsg'>See what's happening in the world right now</h1>
                 </div>
                 <div className='button-container'>
-                    <Link to='/register'>
-                    <button className='button1'>Sign up</button>
-                    </Link>
+
+                    <button className='button1' onClick= {() => setRegister(true)}>Sign up</button>
+
                     <Link to='/auth'>
                     <button className='button2'>Log in</button>                  
                     </Link>
                 </div>
             </div>
+
+            {register ? <Register/> : null}
+
         </div>
     )
 }

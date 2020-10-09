@@ -14,7 +14,8 @@ module.exports = {
         const salt = bcrypt.genSaltSync(10)
         const hash = bcrypt.hashSync(password, salt)
 //save user and password to db
-        const newUser = await db.register_user([email, username, hash])
+        const [newUser] = await db.register_user([email, username, hash])
+        delete newUser.hash
         req.session.user = newUser
         res.status(200).send(newUser)
     },
