@@ -15,17 +15,17 @@ module.exports = {
         const { content } = req.body
 
         await db.add_post([id, content])
-        
+
 
         const posts = await getAllPosts(db)
         res.status(200).send(posts)
     },
     editPost: async (req, res) => {
         const db = req.app.get('db')
-        const { content } = req.body
+        const { editContent } = req.body
         const { post_id } = req.params
 
-        await db.edit_post([content, post_id])
+        await db.edit_post([editContent, post_id])
 
         const posts = await getAllPosts(db)
         res.status(200).send(posts)

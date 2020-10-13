@@ -1,4 +1,4 @@
-SELECT p.content, p.created_at, u.username 
+SELECT p.content, p.created_at, u.username, p.id
 FROM posts p
 JOIN users u ON u.id = p.users_id;
 

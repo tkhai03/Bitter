@@ -21,7 +21,8 @@ function Dashboard(props) {
                 .then(res => props.loginUser(res.data))
                 .catch(err => console.log(err))
             axios.get('/api/posts')
-                .then((res) => setPosts(res.data))
+                .then((res) => {setPosts(res.data) 
+                    console.log(res.data)})
         }
     }, [])
 
@@ -40,7 +41,7 @@ function Dashboard(props) {
         <div className='bigDashboard'>
             <div className='Dashboard'>
                     <Sidebar />
-                    <Feed posts={posts}/>
+                    <Feed posts={posts} />
                     <Widgets />
                     <button onClick={logout} className='dashLogout'>Log Out</button>
             </div>
