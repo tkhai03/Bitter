@@ -3,10 +3,13 @@ import './Landing.css'
 import bitterLogo from './bitter-chat-background.jpg'
 import {Link} from 'react-router-dom'
 import Register from '../Register/Register'
+import SentimentDissatisfiedIcon from '@material-ui/icons/SentimentDissatisfied';
 
 
 function Landing() {
     const [register, setRegister] = useState(false)
+    const [email, setEmail] = useState('')
+    const [password, setPassword] = useState('')
 
     return (
         <div className="Landing">
@@ -17,6 +20,7 @@ function Landing() {
                 <h1 className='posterMsg'>Join the conversation</h1>
             </div>
             <div className='auth_container'>
+                <SentimentDissatisfiedIcon className='landing_bitterIcon'/>
                 <div className='loginText'>
                     <h1 className='loginMsg'>See what's happening in the world right now</h1>
                 </div>

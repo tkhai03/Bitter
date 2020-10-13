@@ -8,6 +8,7 @@
 .grieveBox > form {
     display: flex;
     flex-direction: column;
+
 }
 
 .grieveBox_input{
@@ -22,6 +23,7 @@
     border: none;
     background-color: #0F0D1A;
     color: white;
+
 }
 
 .grieveBox_grieveButton{
@@ -31,8 +33,9 @@
     font-weight: 900 !important;
     text-transform: inherit !important;
     border-radius: 30px !important;
-    height: 20px !important;
+    height: 23px !important;
     width: 100px !important;
     margin-top: 20px !important;
     margin-left: auto !important;
+
 }

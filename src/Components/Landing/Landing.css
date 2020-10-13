@@ -35,7 +35,17 @@
     flex-direction: column;
     /* height: 150px;
     width: 100px; */
+}
 
+.landing_bitterIcon{
+    position: relative;
+    top: 170px;
+    left: 310px;
+    color: #9797DC;
+    font-size: 60px !important;
+    margin-top: 20px !important;
+    margin-left: 20px !important;
+    margin-right:20px !important;
 }
 .loginText{
     display: flex;

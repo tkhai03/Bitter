@@ -15,6 +15,7 @@ module.exports = {
         const { content } = req.body
 
         await db.add_post([id, content])
+        
 
         const posts = await getAllPosts(db)
         res.status(200).send(posts)
