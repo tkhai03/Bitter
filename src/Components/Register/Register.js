@@ -47,7 +47,7 @@ class Register extends Component{
 
                         <input className='inputBox' placeholder='Username' name='username' text='text' value={this.state.username} onChange={(e) => {this.handleInput(e)}}/>
 
-                        <input className='inputBox' placeholder='Password' name='password' text='password' value={this.state.password} onChange={(e) => {this.handleInput(e)}}/>
+                        <input className='inputBox' placeholder='Password' name='password' type='password' value={this.state.password} onChange={(e) => {this.handleInput(e)}}/>
                     </div>
 
                     <button className='registerButton' onClick={ () => {this.handleRegister()}} >Register</button>                

@@ -13,10 +13,11 @@
     padding: 0 10px;
   }
   .dashLogout{
-    height: 30px;
-    
-    /* position: relative; */
-    left: 180px;
-    bottom: 50px;
+    width: 100px;
+    height: 20px;    
+  }
+
+  .dashLogout:hover{
+    cursor: pointer;
   }
   

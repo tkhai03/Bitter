@@ -1,4 +1,8 @@
+require('dotenv').config()
 const bcrypt = require('bcryptjs')
+const nodemailer = require('nodemailer')
+const {NODE_EMAIL, NODE_PASSWORD}= process.env
+
 
 module.exports = {
     register: async (req, res) => {
@@ -10,6 +14,29 @@ module.exports = {
         if (user) {
             return res.status(409).send('Email already exists')
         }
+        let transporter = nodemailer.createTransport({
+            host: 'smtp.gmail.com',
+            auth: {
+                type:'login',
+                user: NODE_EMAIL,
+                pass: NODE_PASSWORD
+            }
+        })
+
+        let mailOptions = {
+            from: NODE_EMAIL,
+            to: email,
+            subject: 'This is a Test',
+            text: 'IT WORKS!!!'
+        }
+
+        transporter.sendMail(mailOptions, (err, data) => {
+            if (err) {
+                console.log(err.message)
+            } else {
+                console.log('Email SENT!')
+            }
+        })
 
         const salt = bcrypt.genSaltSync(10)
         const hash = bcrypt.hashSync(password, salt)

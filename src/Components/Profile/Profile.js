@@ -3,7 +3,7 @@ import React from 'react'
 function Profile(){
     return(
         <div>
-            Profile.js
+            HELLO THIS IS THE PROFILE 
         </div>
     )
 }

@@ -3,11 +3,11 @@ import { connect } from 'react-redux'
 import { getUser, loginUser, logoutUser } from '../../ducks/reducer'
 import { withRouter } from 'react-router-dom'
 import axios from 'axios'
-import Post from './Post'
 import Sidebar from './Sidebar'
 import Feed from './Feed'
 import Widgets from './Widgets'
 import './Dashboard.css';
+
 
 
 
@@ -16,6 +16,10 @@ function Dashboard(props) {
     // const [loading, setLoading] = useState(true)
 
     useEffect(() => {
+        getPosts()
+    }, [])
+
+    const getPosts = () => {
         if (!props.isLoggedIn) {
             axios.get('/auth/getUser')
                 .then(res => props.loginUser(res.data))
@@ -24,7 +28,7 @@ function Dashboard(props) {
                 .then((res) => {setPosts(res.data) 
                     console.log(res.data)})
         }
-    }, [])
+    }
 
     const logout = () => {
         axios.delete('/auth/logout')
@@ -41,7 +45,7 @@ function Dashboard(props) {
         <div className='bigDashboard'>
             <div className='Dashboard'>
                     <Sidebar />
-                    <Feed posts={posts} />
+                    <Feed posts={posts} getPosts = {getPosts} />
                     <Widgets />
                     <button onClick={logout} className='dashLogout'>Log Out</button>
             </div>

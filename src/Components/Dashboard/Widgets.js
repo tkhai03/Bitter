@@ -4,7 +4,9 @@ import './Widgets.css'
 function Widgets(){
     return(
         <div className='Widgets'>
-            <h2>Widgets</h2>
+            <div className = 'widgetContainer'>
+                Space
+            </div>
         </div>
     )
 }

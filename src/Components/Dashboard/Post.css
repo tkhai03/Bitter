@@ -1,23 +1,58 @@
 .Post{
-    height: 100px;
+    height: 125px;
     width: 500px;
     border-bottom: 1px solid #221B2B;
+    /* background-color: teal; */
 }
+
+
 .postContent{
-    width: 402px;
+    padding: 13px;
+    padding-bottom: 38px;
+    padding-left: 10px;
     position: relative;
-    left: 80px;
-    padding: 10px;
+    left: 40px;
+    margin-top: -25px;
     color: white;
     font-family: sans-serif;
-    /* font-size: 13px; */
-    /* font-weight: 100; */
-    /* border-bottom: 1px solid darkslategrey */
+
 }
 h3{
-    font-size: 15px;;
+    font-size: 13px;
+    font: medium;
 }
 p{
-    font-size: 13px;;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    font-size: 13px;
     padding-top: 6px;
+    /* background-color: salmon; */
+    position: relative;
+    right: 10px;
+    height: 20px;
+    width: 415px;
 }
+
+.likeButton{
+    color: palevioletred !important;
+    width: 26px !important;
+    margin-left: 10px !important;
+    position: relative !important;
+    top: 80px !important;
+
+}
+.postButton{
+    height: 22px !important;
+    width: 80px !important;
+    border-radius: 20px !important;
+    margin-left: 20px !important;
+    margin-top: 35px !important;
+    position: relative !important;
+    left: 45% !important;
+
+}
+.postButton:hover{
+    cursor: pointer;
+}
+

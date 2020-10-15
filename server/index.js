@@ -4,6 +4,7 @@ const session = require('express-session')
 const massive = require('massive')
 const authCtrl = require('./authController')
 const postCtrl = require('./Controller')
+const nodemailer = require('nodemailer')
 
 const app = express()
 app.use(express.json())
