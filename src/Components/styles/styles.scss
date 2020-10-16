@@ -1,0 +1,52 @@
+.Widgets {
+    flex: 054;
+  }
+  
+  .widgetContainer {
+    height: 600px;
+    width: 430px;
+    background-color: #0F0D1A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    margin-left: 60px;
+    border-radius: 5%;
+    box-shadow: 6px 10px 50px 6px rgba(41, 38, 92, 0.71);
+  }
+  
+  .widgetFeed {
+    height: 510px;
+    width: 350px;
+    background-color: darkslateblue;
+    border: 1px solid  #221B2B;
+    border-top: 10px solid #221B2B;
+  }
+  
+  .widgetPost {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    width: 350px;
+    border-bottom: 1px solid #221B2B;
+  }
+  
+  .widgetUser {
+    height: 20px;
+    width: 80px;
+    font-size: 13px;
+    font: medium;
+    font-family: sans-serif;
+    color: white;
+    padding-top: 8px;
+    padding-left: 5px;
+  }
+  
+  .copyPost {
+    height: 50px;
+    width: 300px;
+    margin-left: 18px;
+    padding-bottom: 5px;
+    font-size: 12px;
+    color: white;
+  }

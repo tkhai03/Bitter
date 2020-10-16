@@ -3,7 +3,6 @@ const nodemailer = require('nodemailer')
 require('dotenv').config()
 const {NODE_EMAIL, NODE_PASSWORD}= process.env
 
-
 module.exports = {
     register: async (req, res) => {
         const db = req.app.get('db')
@@ -16,6 +15,8 @@ module.exports = {
         }
         let transporter = nodemailer.createTransport({
             host: 'smtp.gmail.com',
+            // port: 587,
+            // secure: false,
             auth: {
                 type:'login',
                 user: NODE_EMAIL,
@@ -26,8 +27,8 @@ module.exports = {
         let mailOptions = {
             from: NODE_EMAIL,
             to: email,
-            subject: 'This is a Test',
-            text: 'IT WORKS!!!'
+            subject: 'Welcome to Bitter',
+            text: 'Join the conversation.'
         }
 
         transporter.sendMail(mailOptions, (err, data) => {

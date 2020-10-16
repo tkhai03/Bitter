@@ -36,7 +36,7 @@ function Post(props) {
         <div>
             {!edit ?
                 <div className='Post'>
-                    <Button className='likeButton' onClick={() => likePosts()}><FavoriteIcon/></Button>
+                    <Button className='likeButton' onClick={() => savePosts()}><FavoriteIcon/></Button>
                     <div className='postContent'>
                         <h3>@{username}</h3>
                         <p>{content}</p>
