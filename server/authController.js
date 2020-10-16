@@ -1,6 +1,6 @@
-require('dotenv').config()
 const bcrypt = require('bcryptjs')
 const nodemailer = require('nodemailer')
+require('dotenv').config()
 const {NODE_EMAIL, NODE_PASSWORD}= process.env
 
 

@@ -16,8 +16,13 @@ create table if not exists posts (
     created_at date
 );
 
-CREATE TABLE following(
-    follower_id int references users(id),
-    following_id int references users(id),
-    connection_id serial primary key  
-);
+-- CREATE TABLE following(
+--     follower_id int references users(id),
+--     following_id int references users(id),
+--     connection_id serial primary key  
+-- );
+CREATE TABLE likes(
+    id SERIAL PRIMARY KEY,
+    like_text VARCHAR(100),
+    like_id INT REFERENCES users(id)
+)

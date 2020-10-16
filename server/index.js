@@ -38,4 +38,6 @@ app.get('/api/posts', postCtrl.getPosts)
 app.post('/api/posts', postCtrl.addPost)
 app.put('/api/posts/:post_id', postCtrl.editPost)
 app.delete('/api/posts/:post_id', postCtrl.deletePost)
-app.get('/api/profile', postCtrl.followingPosts)
+
+// app.post('/api/posts', postCtrl.savePosts)
+// app.get('/api/posts', postCtrl.likePosts)

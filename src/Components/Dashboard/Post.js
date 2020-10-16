@@ -5,9 +5,10 @@ import FavoriteIcon from '@material-ui/icons/Favorite';
 import {Button} from '@material-ui/core'
 
 function Post(props) {
-    const { date, content, username, id } = props
+    const { content, username, id } = props
     const [editContent, setEditContent] = useState(content)
     const [edit, setEdit] = useState(false)
+    const [savePost, setSavePost] = useState([])
     
 
     const editPost = () => {
@@ -26,11 +27,16 @@ function Post(props) {
         })
     }
 
+    const savePosts = () => {
+        axios.post('/api/posts', {setSavePost})
+        .then((res) => {})
+    }
+
     return (
         <div>
             {!edit ?
                 <div className='Post'>
-                    <Button className='likeButton'><FavoriteIcon/></Button>
+                    <Button className='likeButton' onClick={() => likePosts()}><FavoriteIcon/></Button>
                     <div className='postContent'>
                         <h3>@{username}</h3>
                         <p>{content}</p>
@@ -41,7 +47,7 @@ function Post(props) {
                 </div> :
                 <div className='Post'>
                     <input type='text' value={editContent} onChange={(e) => setEditContent(e.target.value)} />
-                    <button className='postEdit' onClick={() => editPost()}>Save Changes</button>
+                    <button className='postEdit' onClick={() => editPost()}>Save</button>
 
                 </div>}
         </div>
