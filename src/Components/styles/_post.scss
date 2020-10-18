@@ -1,26 +1,28 @@
-/* .Post{
+@import "./variables.scss";
+
+.Post{
     height: 125px;
     width: 500px;
-    border-bottom: 1px solid #221B2B;
-}
-
-
-.postContent{
+    border-bottom: 1px solid $borderColor;
+  }
+  
+  
+  .postContent{
     padding: 13px;
     padding-bottom: 38px;
     padding-left: 10px;
     position: relative;
     left: 40px;
     margin-top: -25px;
-    color: white;
+    color: $textColor;
     font-family: sans-serif;
-
-}
-h3{
+  
+  }
+  h3{
     font-size: 13px;
     font: medium;
-}
-p{
+  }
+  p{
     display: flex;
     align-items: center;
     justify-content: right;
@@ -30,17 +32,17 @@ p{
     right: 10px;
     height: 20px;
     width: 415px;
-}
-
-.likeButton{
+  }
+  
+  .likeButton{
     color: palevioletred !important;
     width: 26px !important;
     margin-left: 10px !important;
     position: relative !important;
     top: 80px !important;
-
-}
-.postButton{
+  
+  }
+  .postButton{
     height: 22px !important;
     width: 80px !important;
     border-radius: 20px !important;
@@ -48,9 +50,8 @@ p{
     margin-top: 35px !important;
     position: relative !important;
     left: 45% !important;
-
-}
-.postButton:hover{
-    cursor: pointer;
-}
- */
+    &::hover{
+      cursor: pointer;
+    }
+  }
+  

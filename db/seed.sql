@@ -9,7 +9,7 @@ CREATE TABLE users(
     password text
 );
 
-create table if not exists posts (
+Create Table if not exists posts (
     id serial primary key,
     users_id int references users(id),
     content varchar(250),
@@ -21,8 +21,14 @@ create table if not exists posts (
 --     following_id int references users(id),
 --     connection_id serial primary key  
 -- );
+-- CREATE TABLE likes(
+--     id SERIAL PRIMARY KEY,
+--     like_text VARCHAR(100),
+--     like_id INT REFERENCES users(id)
+-- )
 CREATE TABLE likes(
     id SERIAL PRIMARY KEY,
-    like_text VARCHAR(100),
-    like_id INT REFERENCES users(id)
-)
+    post_id INT REFERENCES posts(id)
+    user_id INT REFERENCES users(id)
+);
+

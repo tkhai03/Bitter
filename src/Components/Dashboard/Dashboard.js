@@ -13,7 +13,19 @@ import './Dashboard.css';
 
 function Dashboard(props) {
     const [posts, setPosts] = useState([])
-    // const [loading, setLoading] = useState(true)
+    const [likes, setLikes] = useState([])
+    // const [getLiked, setgetLiked] = useState([])
+
+    const addLikedPost = () => {
+        axios.post('/api/posts/', {likes})
+        .then((res) => {
+            setLikes()
+            
+        })
+    }
+
+    // const getLikedPost = () => {}
+
 
     useEffect(() => {
         getPosts()
@@ -45,7 +57,7 @@ function Dashboard(props) {
         <div className='bigDashboard'>
             <div className='Dashboard'>
                     <Sidebar />
-                    <Feed posts={posts} getPosts = {getPosts} />
+                    <Feed posts={posts} getPosts = {getPosts} addLikedPost = {addLikedPost}/>
                     <Widgets />
                     <button onClick={logout} className='dashLogout'>Log Out</button>
             </div>

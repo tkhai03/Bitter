@@ -1,0 +1,24 @@
+@import "./variables.scss";
+
+
+.bigDashboard{
+    width: 100vw;
+    height: 100vh;
+    background-color: $primaryColor;
+  }
+  .Dashboard {
+      display: flex;
+      background-color: $primaryColor;
+      height: 100vh;
+      max-width: 1300px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0 10px;
+    }
+    .dashLogout{
+      width: 100px;
+      height: 20px;  
+      &::hover{
+        cursor: pointer;
+      }  
+    }

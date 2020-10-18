@@ -1,5 +1,5 @@
 import React from 'react'
-import './Sidebar.css'
+// import './Sidebar.css'
 import SentimentDissatisfiedIcon from '@material-ui/icons/SentimentDissatisfied';
 import NotificationsOutlinedIcon from '@material-ui/icons/NotificationsOutlined';
 import SidebarOption from './SidebarOption'
@@ -10,6 +10,7 @@ import TurnedInNotOutlinedIcon from '@material-ui/icons/TurnedInNotOutlined';
 import ListAltOutlinedIcon from '@material-ui/icons/ListAltOutlined';
 import PersonOutlineOutlinedIcon from '@material-ui/icons/PersonOutlineOutlined';
 import MoreHorizOutlinedIcon from '@material-ui/icons/MoreHorizOutlined';
+import '../styles/styles.css'
 
 
 

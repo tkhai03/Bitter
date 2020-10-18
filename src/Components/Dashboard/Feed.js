@@ -7,7 +7,7 @@ import Post from './Post'
 function Feed(props){
 
         const mappedPosts = props.posts.map((post, index) => {
-        return <Post content={post.content} username={post.username} date={post.created_at} key={index} id={post.id} getPosts = {props.getPosts}/>
+        return <Post content={post.content} username={post.username} date={post.created_at} key={index} id={post.id} getPosts = {props.getPosts} addLikedPost = {props.addLikedPost}/>
     })
     return(
 

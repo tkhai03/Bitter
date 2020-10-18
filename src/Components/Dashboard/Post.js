@@ -8,7 +8,7 @@ function Post(props) {
     const { content, username, id } = props
     const [editContent, setEditContent] = useState(content)
     const [edit, setEdit] = useState(false)
-    const [savePost, setSavePost] = useState([])
+ 
     
 
     const editPost = () => {
@@ -27,16 +27,11 @@ function Post(props) {
         })
     }
 
-    const savePosts = () => {
-        axios.post('/api/posts', {setSavePost})
-        .then((res) => {})
-    }
-
     return (
         <div>
             {!edit ?
                 <div className='Post'>
-                    <Button className='likeButton' onClick={() => savePosts()}><FavoriteIcon/></Button>
+                    <Button className='likeButton' onClick={() => props.addLikedPost()}><FavoriteIcon/></Button>
                     <div className='postContent'>
                         <h3>@{username}</h3>
                         <p>{content}</p>
