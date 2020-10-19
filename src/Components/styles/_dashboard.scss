@@ -16,8 +16,8 @@
       padding: 0 10px;
     }
     .dashLogout{
-      width: 100px;
-      height: 20px;  
+      @include buttonStyle();
+      
       &::hover{
         cursor: pointer;
       }  

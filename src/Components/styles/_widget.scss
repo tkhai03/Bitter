@@ -34,21 +34,21 @@
   }
   
   .widgetUser {
+    @include postStyle();
+
     height: 20px;
     width: 80px;
     font-size: 13px;
     font: medium;
-    font-family: sans-serif;
-    color: $textColor;
     padding-top: 8px;
     padding-left: 5px;
   }
   
   .copyPost {
+    @include postStyle();
     height: 50px;
     width: 300px;
     margin-left: 18px;
     padding-bottom: 5px;
     font-size: 12px;
-    color: $textColor;
   }

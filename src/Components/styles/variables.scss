@@ -2,3 +2,15 @@ $primaryColor: #0F0D1A;
 $borderColor: #221B2B;
 $textColor: white;
 $bitterColor: #9797DC;
+
+@mixin postStyle {
+    color: $textColor;
+    font-family: sans-serif;
+    
+  }
+
+@mixin buttonStyle {
+    height: 22px;
+    width: 80px;
+    border-radius: 20px;
+}

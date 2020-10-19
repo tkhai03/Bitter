@@ -1,5 +1,4 @@
 import React from 'react'
-// import './Sidebar.css'
 import SentimentDissatisfiedIcon from '@material-ui/icons/SentimentDissatisfied';
 import NotificationsOutlinedIcon from '@material-ui/icons/NotificationsOutlined';
 import SidebarOption from './SidebarOption'

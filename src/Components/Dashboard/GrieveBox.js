@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import './GrieveBox.css'
 import { Avatar, Button } from "@material-ui/core"
 import axios from 'axios'
 

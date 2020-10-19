@@ -1,5 +1,6 @@
 @import "./variables.scss";
 
+
 .Post{
     height: 125px;
     width: 500px;
@@ -8,14 +9,14 @@
   
   
   .postContent{
+    @include postStyle();
+
     padding: 13px;
     padding-bottom: 38px;
     padding-left: 10px;
     position: relative;
     left: 40px;
     margin-top: -25px;
-    color: $textColor;
-    font-family: sans-serif;
   
   }
   h3{
@@ -43,9 +44,8 @@
   
   }
   .postButton{
-    height: 22px !important;
-    width: 80px !important;
-    border-radius: 20px !important;
+    @include buttonStyle();
+
     margin-left: 20px !important;
     margin-top: 35px !important;
     position: relative !important;
@@ -55,3 +55,18 @@
     }
   }
   
+.postEdit{
+  @include buttonStyle();
+  margin-left: 1
+  00px;
+}
+
+.editInput{
+  @include postStyle();
+
+  height: 100px;
+  width: 300px;
+  background-color: $primaryColor;
+  color: palevioletred;  //to show the text can be edited
+  border: none;
+}

@@ -1,5 +1,4 @@
 import React, { useState} from 'react'
-import './Post.css'
 import axios from 'axios'
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import {Button} from '@material-ui/core'
@@ -41,7 +40,7 @@ function Post(props) {
                     </div>
                 </div> :
                 <div className='Post'>
-                    <input type='text' value={editContent} onChange={(e) => setEditContent(e.target.value)} />
+                    <input className='editInput' type='text' value={editContent} onChange={(e) => setEditContent(e.target.value)} />
                     <button className='postEdit' onClick={() => editPost()}>Save</button>
 
                 </div>}
