@@ -1,0 +1,47 @@
+@import "./variables.scss";
+
+.Auth{
+    @include viewSetting($secondaryColor);
+    }
+    .loginContainer{
+        @include flexing(center);
+        padding-top: 130px;
+
+    }
+    .authBitterIcon{
+        color: white;
+        font-size: 60px !important;
+    }
+    .authTitle{
+        @include postStyle();
+        width: 150px;
+        padding: 10px;
+        font-size: 19px;
+        font-weight: 700;
+    }
+    .authInputs{
+        @include flexing(right);
+        width: 400px;
+        padding: 12px;
+    }
+    
+    .authEmail{
+        @include authInputs();
+        margin-bottom: 18px;
+    }
+    
+    .authPassword{
+    @include authInputs();
+    }
+
+    .authLoginButton{
+        @include buttonStyle();
+        width: 400px;
+        height: 42px;
+        font-size: medium;
+        outline: mediumpurple;
+    }
+    .authLoginButton:hover{
+        cursor: pointer;
+        text-decoration: mediumslateblue;
+    }

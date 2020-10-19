@@ -117,14 +117,7 @@
 h1 {
   height: 20px;
   width: 130px;
-}
-
-h1::hover {
-  background-color: #6A6AC4 !important;
-  border-radius: 40px !important;
-  color: #B1B1EE !important;
-  -webkit-transition: color 150ms ease-out !important;
-  transition: color 150ms ease-out !important;
+  color: white;
 }
 
 .Post {
@@ -187,6 +180,11 @@ p {
 
 .postButton::hover {
   cursor: pointer;
+  text-decoration: underline;
+}
+
+.postButton::hover {
+  cursor: pointer;
 }
 
 .postEdit {
@@ -194,6 +192,11 @@ p {
   width: 80px;
   border-radius: 20px;
   margin-left: 1 00px;
+}
+
+.postEdit::hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .editInput {
@@ -317,6 +320,11 @@ p {
 
 .dashLogout::hover {
   cursor: pointer;
+  text-decoration: underline;
+}
+
+.dashLogout::hover {
+  cursor: pointer;
 }
 
 .bigRegister {
@@ -385,5 +393,105 @@ p {
   text-transform: inherit !important;
   height: 30px !important;
   width: 90px !important;
+}
+
+.registerButton::hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.Auth {
+  height: 100vh;
+  width: 100%;
+  background-color: #19111E;
+}
+
+.loginContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 130px;
+}
+
+.authBitterIcon {
+  color: white;
+  font-size: 60px !important;
+}
+
+.authTitle {
+  color: white;
+  font-family: sans-serif;
+  width: 150px;
+  padding: 10px;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.authInputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: right;
+      -ms-flex-align: right;
+          align-items: right;
+  width: 400px;
+  padding: 12px;
+}
+
+.authEmail {
+  padding: 13px;
+  background-color: #221B2B;
+  border: none;
+  color: white;
+  font-size: medium;
+  outline: none;
+  margin-bottom: 18px;
+}
+
+.authPassword {
+  padding: 13px;
+  background-color: #221B2B;
+  border: none;
+  color: white;
+  font-size: medium;
+  outline: none;
+}
+
+.authLoginButton {
+  height: 22px;
+  width: 80px;
+  border-radius: 20px;
+  width: 400px;
+  height: 42px;
+  font-size: medium;
+  outline: mediumpurple;
+}
+
+.authLoginButton::hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.authLoginButton:hover {
+  cursor: pointer;
+  -webkit-text-decoration: mediumslateblue;
+          text-decoration: mediumslateblue;
+}
+
+.App {
+  height: 100vh;
+  width: 100%;
+  background-color: #0F0D1A;
 }
 /*# sourceMappingURL=styles.css.map */

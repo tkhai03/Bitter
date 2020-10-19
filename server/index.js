@@ -40,5 +40,5 @@ app.put('/api/posts/:post_id', postCtrl.editPost)
 app.delete('/api/posts/:post_id', postCtrl.deletePost)
 
 
-app.post('/api/posts/:post_id', postCtrl.likePosts)
-app.get('/api/posts', postCtrl.getLikedPosts)
+app.post('/api/likes/:post_id', postCtrl.likePosts)
+app.get('/api/likes', postCtrl.getLikedPosts)

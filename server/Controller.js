@@ -49,8 +49,9 @@ module.exports = {
 
     },
     getLikedPosts: async (req, res) => {
-        // const db = req.app.get('db')
-        const likes = await db.getLikedPosts()
-        return likes
+        const db = req.app.get('db')
+        const {id} = req.session.user
+        const likes = await db.get_liked_posts(id)
+        res.status(200).send(likes)
     }
 }

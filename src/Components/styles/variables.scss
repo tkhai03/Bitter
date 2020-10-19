@@ -1,16 +1,41 @@
 $primaryColor: #0F0D1A;
+$secondaryColor: #19111E;
 $borderColor: #221B2B;
 $textColor: white;
 $bitterColor: #9797DC;
 
-@mixin postStyle {
+@mixin postStyle() {
     color: $textColor;
-    font-family: sans-serif;
-    
+    font-family: sans-serif;  
   }
 
-@mixin buttonStyle {
+@mixin buttonStyle() {
     height: 22px;
     width: 80px;
     border-radius: 20px;
+        &::hover{
+            cursor: pointer;
+            text-decoration: underline;
+        }
+}
+
+@mixin authInputs(){
+    padding: 13px;
+    background-color: $borderColor;
+    border: none;
+    color: white;
+    font-size: medium;
+    outline: none;
+}
+
+@mixin flexing($align){
+    display: flex;
+    flex-direction: column;
+    align-items: $align;
+}
+
+@mixin viewSetting($background){
+    height: 100vh;
+    width: 100%;
+    background-color: $background;
 }

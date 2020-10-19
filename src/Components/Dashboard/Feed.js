@@ -1,8 +1,7 @@
 import React from 'react'
-
 import GrieveBox from './GrieveBox'
 import Post from './Post'
-
+import Count from './Count'
 
 function Feed(props){
 

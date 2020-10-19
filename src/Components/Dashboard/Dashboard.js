@@ -16,19 +16,25 @@ function Dashboard(props) {
     const [likes, setLikes] = useState([])
     // const [getLiked, setgetLiked] = useState([])
 
-    const addLikedPost = () => {
-        axios.post('/api/posts/', {likes})
+    const addLikedPost = (post_id) => {
+        axios.post(`/api/likes/${post_id}`)
         .then((res) => {
-            setLikes()
+            getLikedPosts()
             
         })
     }
 
-    // const getLikedPost = () => {}
+    const getLikedPosts = () => {
+        axios.get('/api/likes')
+        .then((res) => {
+            setLikes(res.data)
+        })
+    }
 
 
     useEffect(() => {
         getPosts()
+        getLikedPosts()
     }, [])
 
     const getPosts = () => {
@@ -52,7 +58,7 @@ function Dashboard(props) {
     // const mappedPosts = posts.map((post, index) => {
     //     return <Post content={post.content} key={index} date={post.created_at} />
     // })
-
+console.log(likes)
     return (
         <div className='bigDashboard'>
             <div className='Dashboard'>

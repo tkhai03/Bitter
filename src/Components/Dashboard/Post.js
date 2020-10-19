@@ -3,6 +3,7 @@ import axios from 'axios'
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import {Button} from '@material-ui/core'
 
+
 function Post(props) {
     const { content, username, id } = props
     const [editContent, setEditContent] = useState(content)
@@ -30,7 +31,7 @@ function Post(props) {
         <div>
             {!edit ?
                 <div className='Post'>
-                    <Button className='likeButton' onClick={() => props.addLikedPost()}><FavoriteIcon/></Button>
+                    <Button className='likeButton' onClick={() => props.addLikedPost(id)}><FavoriteIcon/></Button>
                     <div className='postContent'>
                         <h3>@{username}</h3>
                         <p>{content}</p>
