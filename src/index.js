@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import {BrowserRouter, HashRouter} from 'react-router-dom'
+import {BrowserRouter} from 'react-router-dom'
 import {Provider} from 'react-redux'
 import store from './ducks/store'
-const Router = process.env.NODE_ENV === 'development' ? HashRouter : BrowserRouter;
+const Router = BrowserRouter;
 
 ReactDOM.render(
   <Provider store={store}>

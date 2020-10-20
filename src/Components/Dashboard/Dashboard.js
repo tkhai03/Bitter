@@ -9,8 +9,6 @@ import Widgets from './Widgets'
 
 
 
-
-
 function Dashboard(props) {
     const [posts, setPosts] = useState([])
     const [likes, setLikes] = useState([])

@@ -5,6 +5,7 @@ const massive = require('massive')
 const authCtrl = require('./authController')
 const postCtrl = require('./Controller')
 const nodemailer = require('nodemailer')
+const path = require('path')
 
 const app = express()
 app.use(express.json())
@@ -42,3 +43,10 @@ app.delete('/api/posts/:post_id', postCtrl.deletePost)
 
 app.post('/api/likes/:post_id', postCtrl.likePosts)
 app.get('/api/likes', postCtrl.getLikedPosts)
+
+//serve up build folder as a bundle of assets.
+//sends to client, then loads it. Requests can now be sent to the server
+app.use(express.static(__dirname +'/../build'))
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../build/index.html'))
+})
