@@ -12,7 +12,7 @@ import Widgets from './Widgets'
 function Dashboard(props) {
     const [posts, setPosts] = useState([])
     const [likes, setLikes] = useState([])
-    // const [getLiked, setgetLiked] = useState([])
+
 
     const addLikedPost = (post_id) => {
         axios.post(`/api/likes/${post_id}`)
@@ -56,13 +56,16 @@ function Dashboard(props) {
     // const mappedPosts = posts.map((post, index) => {
     //     return <Post content={post.content} key={index} date={post.created_at} />
     // })
+
+
+    
 console.log(likes)
     return (
         <div className='bigDashboard'>
             <div className='Dashboard'>
                     <Sidebar />
                     <Feed posts={posts} getPosts = {getPosts} addLikedPost = {addLikedPost}/>
-                    <Widgets />
+                    <Widgets likes = {likes} setLikes={setLikes} getLikedPosts = {getLikedPosts}/>
                     <button onClick={logout} className='dashLogout'>Log Out</button>
             </div>
         </div>

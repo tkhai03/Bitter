@@ -1,0 +1,35 @@
+@import "./variables.scss";
+
+.Widgets {
+    flex: 054;
+  }
+  
+  .widgetContainer {
+    height: 600px;
+    width: 430px;
+    background-color: $primaryColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    margin-left: 60px;
+    border-radius: 5%;
+    box-shadow: 6px 10px 50px 6px $borderColor;
+  }
+  
+  .widgetFeed {
+    height: 510px;
+    width: 350px;
+    background-color: $primaryColor;
+    border: 1px solid  $borderColor;
+    border-top: 10px solid $borderColor;
+    min-width: fit-content;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+
+  }
+  .widgetFeed::-webkit-scrollbar{
+    display: none;
+  }

@@ -15,7 +15,7 @@ function Feed(props){
                 <h2>Home</h2>
             </div>
                 <GrieveBox getPosts = {props.getPosts}/>
-                {mappedPosts}
+                {mappedPosts}a
                 
         </div>
     )
