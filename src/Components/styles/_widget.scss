@@ -4,15 +4,17 @@
     height: 80px;
     width: 350px;
     border-bottom: 1px solid $borderColor;
+    background-color: $primaryColor;
   }
   .likeUser{
       @include postStyle();
       height: 20px;
       width: 80px;
-      font-size: 13px;
+      font-size: 10px;
       font: medium;
       padding-top: 8px;
       padding-left: 5px;
+      color: pink;
   }
 
 .likedPost{
@@ -22,4 +24,5 @@
     margin-left: 18px;
     padding-bottom: 8px;
     font-size: 12px;
+    color: pink;
 }

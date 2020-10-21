@@ -56,8 +56,6 @@ function Dashboard(props) {
     // const mappedPosts = posts.map((post, index) => {
     //     return <Post content={post.content} key={index} date={post.created_at} />
     // })
-
-
     
 console.log(likes)
     return (
