@@ -1,11 +1,17 @@
 .Landing{
+    display: flex;
     width: 100%;
     height: 100vh;
     background-color: #38365C;
     display: flex;
 }
+/* .invisLanding{
+    width: 100px;
+    height: 100px;
+    background-color: tomato;
+} */
 .bitterLogo{
-    width:50%;
+    width:100%;
     height:100vh;
 }
 .posterText{
@@ -80,7 +86,18 @@ button{
 }
 
 @media(max-width: 900px){
-    .Landing{
+    .invisLanding{
         display: none;
+    }
+    .landing_bitterIcon{
+        top:25%;
+        left: 415px;
+    }.loginText{
+        top: 26%;
+        left: 330px;
+    }
+    .button-container{
+        top:33%;
+        left:320px;
     }
 }
