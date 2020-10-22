@@ -1,9 +1,7 @@
 @import "./variables.scss";
-
 .Widgets {
     flex: 054;
   }
-  
   .widgetContainer {
     height: 600px;
     width: 430px;
@@ -16,7 +14,6 @@
     border-radius: 5%;
     box-shadow: 6px 10px 50px 6px $borderColor;
   }
-  
   .widgetFeed {
     height: 510px;
     width: 350px;
@@ -27,9 +24,25 @@
     overflow-y: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none;
-
-
   }
   .widgetFeed::-webkit-scrollbar{
     display: none;
+  }
+  @media(max-width: 900px){
+    .Widgets{
+      margin-left: -500px;
+      margin-top: 500px;
+    }
+    .widgetContainer{
+      height:270px;
+      box-shadow: none;
+      width: 502px;
+      margin-left: -2px;
+      border-radius: 0%;
+      margin-top: -33px;
+    }
+    .widgetFeed{
+      height:266px;
+      width: 500px;
+    }
   }

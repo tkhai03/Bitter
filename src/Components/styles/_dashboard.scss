@@ -18,7 +18,10 @@
     .dashLogout{
       @include buttonStyle();
       
-      &::hover{
-        cursor: pointer;
-      }  
+      // &::hover{
+      //   cursor: pointer;
+      // }  
+    }
+    .dashLogout:hover{
+      cursor: pointer;
     }

@@ -2,14 +2,8 @@ import React, { useState } from 'react'
 import { Avatar, Button } from "@material-ui/core"
 import axios from 'axios'
 
-
-
-
 function GrieveBox(props) {
     const [content, setContent] = useState('')
-    // useEffect(() => {
-
-    // },[])
 
     const addPost = () => {
         axios.post('/api/posts', { content })
@@ -18,8 +12,6 @@ function GrieveBox(props) {
                 setContent('')
             })
     }
-
-
 
     return (
         <div className='grieveBox'>

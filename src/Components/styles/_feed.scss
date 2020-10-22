@@ -5,6 +5,7 @@
     border-right: 1px solid $borderColor;
     min-width: fit-content;
     overflow-y: scroll;
+
   }
   
   .feed_header {
@@ -30,4 +31,8 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
-  
+  @media(max-width: 900px){
+    .Feed{
+      height: 462px;
+    }
+  }

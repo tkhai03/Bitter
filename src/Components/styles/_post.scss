@@ -1,13 +1,9 @@
 @import "./variables.scss";
-
-
 .Post{
     height: 125px;
     width: 500px;
     border-bottom: 1px solid $borderColor;
   }
-  
-  
   .postContent{
     @include postStyle();
 
@@ -57,8 +53,7 @@
   
 .postEdit{
   @include buttonStyle();
-  margin-left: 1
-  00px;
+  margin-left: 100px;
 }
 
 .editInput{
@@ -69,4 +64,30 @@
   background-color: $primaryColor;
   color: palevioletred;  //to show the text can be edited
   border: none;
+}
+@media(max-width: 900px){
+  .Post{
+    height: 90px;
+  }
+  .postContent{
+    padding: 5px;
+    padding-bottom: 38px;
+    position: relative;
+    left: 15px;
+    margin-top: -25px;
+  }
+  .likeButton{
+    width: 20px !important;
+    top: 60px !important;
+    margin-left: -5px !important;
+  }
+  .postButton{
+    margin-top: 10px !important;
+  }
+  .postEdit{
+    margin-left: 80px;
+  }
+  .editInput{
+    height: 80px;
+  }
 }

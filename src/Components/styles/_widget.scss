@@ -5,6 +5,7 @@
     width: 350px;
     border-bottom: 1px solid $borderColor;
     background-color: $primaryColor;
+
   }
   .likeUser{
       @include postStyle();
@@ -25,4 +26,10 @@
     padding-bottom: 8px;
     font-size: 12px;
     color: pink;
+}
+@media(max-width: 900px){
+  .Widget{
+    width:500px;
+    height: 100px;
+  }
 }
