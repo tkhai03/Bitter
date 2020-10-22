@@ -4,6 +4,7 @@
     position: absolute;
     top: 150px;
     left: 600px;
+
 }
 
 .Register{
@@ -14,6 +15,7 @@
     position: relative;
     top: 60px;
     left: 30%;
+
 }
 .bitterIcon{
     color: white;
@@ -37,7 +39,7 @@
 .inputBox{
     padding: 15px;
     margin-bottom: 18px;
-    background-color: #19111E;
+    background-color: $secondaryColor;
     border: none;
     color: white;
     font-size: medium;
@@ -55,4 +57,31 @@
     height: 30px !important;
     width: 90px !important;
 
+}
+@media(max-width: 900px){
+    .Register{
+        position: relative;
+        top: -30px;
+        left: -400px;
+    }
+    .bitterIcon{
+        font-size: 100px !important;
+        margin-left: 210px;
+    }
+    .topText{
+        text-align: center;
+        font-size: x-large;
+        margin-left: 85px;
+    }
+    .inputContainer{
+        padding: 30px;
+    }
+    .inputBox{
+        padding: 20px;
+    }
+    .registerButton{
+        height: 50px !important;
+        font-weight: 800 !important;
+        border-radius: 40px !important;
+    }
 }

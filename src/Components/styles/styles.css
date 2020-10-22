@@ -376,6 +376,34 @@ p {
   text-decoration: underline;
 }
 
+@media (max-width: 900px) {
+  .Register {
+    position: relative;
+    top: -30px;
+    left: -400px;
+  }
+  .bitterIcon {
+    font-size: 100px !important;
+    margin-left: 210px;
+  }
+  .topText {
+    text-align: center;
+    font-size: x-large;
+    margin-left: 85px;
+  }
+  .inputContainer {
+    padding: 30px;
+  }
+  .inputBox {
+    padding: 20px;
+  }
+  .registerButton {
+    height: 50px !important;
+    font-weight: 800 !important;
+    border-radius: 40px !important;
+  }
+}
+
 .Auth {
   height: 100vh;
   width: 100%;
