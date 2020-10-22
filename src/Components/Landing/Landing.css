@@ -4,13 +4,10 @@
     background-color: #38365C;
     display: flex;
 }
-
-
 .bitterLogo{
     width:50%;
     height:100vh;
 }
-
 .posterText{
     width: 300px;
     display:flex;
@@ -27,7 +24,6 @@
     color: white;
     width: 300px;
 }
-
 .landing_bitterIcon{
     position: relative;
     top: 340px;
@@ -83,8 +79,8 @@ button{
     color: #6A6AC4;
 }
 
-/* @media(max-width: 900px){
+@media(max-width: 900px){
     .Landing{
-        background-color: ;
+        display: none;
     }
-} */
+}

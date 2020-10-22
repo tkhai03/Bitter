@@ -8,8 +8,7 @@ import SentimentDissatisfiedIcon from '@material-ui/icons/SentimentDissatisfied'
 
 function Landing() {
     const [register, setRegister] = useState(false)
-    // const [email, setEmail] = useState('')
-    // const [password, setPassword] = useState('')
+    // const [hidden, setHidden] = useState(false)
 
     return (
         <div className="Landing">
