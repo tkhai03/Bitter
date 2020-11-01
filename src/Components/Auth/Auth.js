@@ -40,7 +40,7 @@ class Auth extends Component{
                     <h1 className='authTitle'>Log in to Bitter</h1>
                     <div className='authInputs'>
                         <input className='authEmail' placeholder='Email' name="email" text="text" value={this.state.email} onChange={(e) => {this.handleInput(e)}}/>
-                        <input className='authPassword' placeholder='Password' name="password" text="text" value={this.state.password} onChange={(e) => {this.handleInput(e)}}/>
+                        <input className='authPassword' placeholder='Password' name="password" type="password" value={this.state.password} onChange={(e) => {this.handleInput(e)}}/>
                     </div>
                     <button className='authLoginButton'onClick={ () => {this.handleLogin()}}>Log in</button>
                 </div>

@@ -62,7 +62,7 @@ console.log(likes)
         <div className='bigDashboard'>
             <div className='Dashboard'>
                     <Sidebar />
-                    <Feed posts={posts} getPosts = {getPosts} addLikedPost = {addLikedPost}/>
+                    <Feed posts={posts} getPosts = {getPosts} addLikedPost = {addLikedPost} getLikedPosts = {getLikedPosts}/>
                     <Widgets likes = {likes} setLikes={setLikes} getLikedPosts = {getLikedPosts}/>
                     <button onClick={logout} className='dashLogout'>Log Out</button>
             </div>

@@ -23,6 +23,7 @@ function Post(props) {
         axios.delete(`/api/posts/${id}`)
         .then((res) => {
             props.getPosts()
+            props.getLikedPosts()
 
         })
     }
